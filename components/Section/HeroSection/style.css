@@ -1,0 +1,108 @@
+.hero-section {
+  --_section-flex-dir: column-reverse;
+  --_detail-max-w: 100%;
+  --_imgbox-max-w: 100%;
+  --_hero-min-h: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: var(--_section-flex-dir);
+  gap: 24px;
+}
+.hero__details,
+.hero__imgbox {
+  min-height: var(--_hero-min-h);
+  border-radius: var(--border-radius-xl);
+}
+.hero__details {
+  max-width: var(--_detail-max-w);
+  padding: calc(1.5 * var(--spacer-largest));
+  background: linear-gradient(
+    to right,
+    rgba(var(--foreground-rgb), 0.05),
+    rgba(var(--background-end-rgb), 0.6)
+  );
+  backdrop-filter: blur(5px);
+}
+.hero__details .title {
+  max-width: 90%;
+}
+.hero__details :is(.desc) {
+  margin-top: var(--spacer-largest);
+  font-size: 1.1rem;
+}
+.hero__imgbox {
+  position: relative;
+  height: var(--_hero-min-h);
+  max-width: var(--_imgbox-max-w);
+  width: var(--_imgbox-max-w);
+  overflow: hidden;
+  border-radius: 30% 70% 70% 30% / 39% 41% 59% 61%;
+}
+.hero__imgbox::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% * 1.41421356237);
+  padding-bottom: calc(100% * 1.41421356237);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30% 70% 70% 30% / 39% 41% 59% 61%;
+  background: rgba(var(--foreground-rgb), 0.05);
+  background: conic-gradient(
+    rgba(var(--background-start-rgb), 1),
+    rgba(var(--clr-dark-orange-rgb), 1),
+    rgba(var(--background-end-rgb), 1),
+    rgba(var(--clr-orange-rgb), 1)
+  );
+  animation: spin 5s linear infinite;
+}
+.hero__imgbox img {
+  transform: translate(-50%, -50%);
+  top: 50% !important;
+  left: 50% !important;
+  height: calc(0.95 * var(--_hero-min-h)) !important;
+  width: 95% !important;
+  border-radius: 30% 70% 70% 30% / 39% 41% 59% 61%;
+}
+.hero__btns {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer);
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* MOBILE ONLY */
+@media screen and (max-width: 44.99em) {
+  .hero__btns {
+    flex-direction: column;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 45em) {
+  .hero-section {
+    --_section-flex-dir: row;
+    --_detail-max-w: 60%;
+    --_imgbox-max-w: 40%;
+    --_hero-min-h: 450px;
+  }
+  .hero__details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 96.006em) {
+}

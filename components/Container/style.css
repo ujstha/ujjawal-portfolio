@@ -1,0 +1,29 @@
+.ts-container {
+  --_container: var(--spacer-small);
+
+  max-width: 100%;
+  padding-right: var(--_container);
+  padding-left: var(--_container);
+}
+
+/* TABLET */
+@media screen and (min-width: 45em) and (max-width: 96.0005em) {
+}
+
+/* TABLET AND ABOVE */
+@media screen and (min-width: 45em) {
+  .ts-container {
+    --_container: calc(4 * var(--spacer-largest));
+  }
+}
+
+/* PORTABLE */
+@media screen and (max-width: 96.0005em) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: 96.006em) {
+  .ts-container {
+    --_container: calc(5 * var(--spacer-larger));
+  }
+}
