@@ -9,6 +9,8 @@ const Container = (props) => {
     className = "",
     isHeader = false,
     isSection = false,
+    refer,
+    style,
   } = props;
   const classes = classNames(
     {
@@ -17,16 +19,32 @@ const Container = (props) => {
     className
   );
 
-  if (isHeader) return <header className={classes}>{children}</header>;
-  if (isSection) return <section className={classes}>{children}</section>;
+  if (isHeader)
+    return (
+      <header className={classes} ref={refer} style={style}>
+        {children}
+      </header>
+    );
+  if (isSection)
+    return (
+      <section className={classes} ref={refer} style={style}>
+        {children}
+      </section>
+    );
 
-  return <div className={classes}>{children}</div>;
+  return (
+    <div className={classes} ref={refer} style={style}>
+      {children}
+    </div>
+  );
 };
 
 Container.propTypes = {
   className: PropTypes.string,
   isHeader: PropTypes.bool,
   isSection: PropTypes.bool,
+  refer: PropTypes.object,
+  style: PropTypes.object,
 };
 
 export default Container;

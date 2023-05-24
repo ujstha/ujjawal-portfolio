@@ -1,0 +1,34 @@
+.btn {
+  --_btn-opacity: 1;
+
+  display: inline-block;
+  padding: var(--spacer-small) calc(2 * var(--spacer-largest));
+  border-radius: var(--border-radius-xxl);
+  border: 2px solid transparent;
+  background: rgba(var(--clr-pink-rgb), var(--_btn-opacity));
+  color: rgba(var(--background-end-rgb), 1);
+  font-size: 0.9rem;
+  text-align: center;
+}
+.btn:hover {
+  --_btn-opacity: 0.8;
+
+  border-color: rgba(var(--clr-pink-rgb), var(--_btn-opacity));
+  background: transparent;
+}
+
+/* MOBILE ONLY */
+@media screen and (max-width: 44.99em) {
+  .btn {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 45em) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: 96.006em) {
+}

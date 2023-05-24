@@ -13,7 +13,7 @@
 /* TABLET AND ABOVE */
 @media screen and (min-width: 45em) {
   .ts-container {
-    --_container: calc(3 * var(--spacer-largest));
+    --_container: calc(4 * var(--spacer-largest));
   }
 }
 
