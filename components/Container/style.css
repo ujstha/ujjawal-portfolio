@@ -9,6 +9,13 @@
 /* TABLET AND ABOVE */
 @media screen and (min-width: 45em) {
   .ts-container {
+    --_container: calc(2 * var(--spacer-largest));
+  }
+}
+
+/* PORTABLE LAPTOP */
+@media screen and (min-width: 64.064em) {
+  .ts-container {
     --_container: calc(4 * var(--spacer-largest));
   }
 }

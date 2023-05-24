@@ -70,6 +70,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacer);
+  margin-top: var(--spacer-largest);
 }
 
 @keyframes spin {
@@ -85,22 +86,29 @@
 @media screen and (max-width: 44.99em) {
   .hero__btns {
     flex-direction: column;
-    margin-top: var(--spacer-largest);
   }
 }
 
 /* TABLET */
 @media screen and (min-width: 45em) {
   .hero-section {
-    --_section-flex-dir: row;
-    --_detail-max-w: 60%;
-    --_imgbox-max-w: 40%;
-    --_hero-min-h: 450px;
+    --_hero-min-h: 550px;
   }
   .hero__details {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    --_hero-min-h: 400px;
+  }
+}
+
+/* PORTABLE LAPTOP */
+@media screen and (min-width: 64.064em) {
+  .hero-section {
+    --_section-flex-dir: row;
+    --_detail-max-w: 60%;
+    --_imgbox-max-w: 40%;
+    --_hero-min-h: 450px;
   }
 }
 

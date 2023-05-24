@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@components/Container";
+import NavItem from "./NavItem";
 
 import "./style.css";
 
@@ -15,18 +16,10 @@ const Nav = () => {
 
         {/* Desktop Navigation */}
         <div>
-          <Link href="/" className="nav-link">
-            Home
-          </Link>
-          <Link href="/" className="nav-link">
-            Projects
-          </Link>
-          <Link href="/" className="nav-link">
-            About
-          </Link>
-          <Link href="/" className="nav-link">
-            Contact
-          </Link>
+          <NavItem text="home" />
+          <NavItem text="projects" />
+          <NavItem text="about" />
+          <NavItem text="contact" />
         </div>
       </nav>
     </Container>

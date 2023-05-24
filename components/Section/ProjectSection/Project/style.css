@@ -23,7 +23,7 @@
   z-index: 3;
 }
 .item__title {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: rgba(var(--background-end-rgb), 1);
 }
@@ -66,13 +66,20 @@
 /* TABLET AND ABOVE */
 @media screen and (min-width: 45em) {
   .project-item {
-    --_item-h: 450px;
-    --_item-max-w: calc(33% - var(--spacer));
+    --_item-h: 325px;
+    --_item-max-w: calc(50% - var(--spacer-smaller));
+  }
+  .project-item:nth-child(3n + 2) {
+    margin-top: calc(2 * var(--spacer));
   }
 }
 
 /* PORTABLE LAPTOP */
 @media screen and (min-width: 64.064em) {
+  .project-item {
+    --_item-h: 400px;
+    --_item-max-w: calc(33.33% - var(--spacer-small));
+  }
   .item__link {
     opacity: 0;
     transition: opacity ease-in 0.3s;
