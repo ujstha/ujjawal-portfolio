@@ -8,7 +8,7 @@ import "./style.css";
 
 const HeroSection = () => {
   return (
-    <Container isSection className="hero-section">
+    <Container id="hero" isSection className="hero-section">
       <div className="hero__details">
         <div>
           <h1 className="title">
