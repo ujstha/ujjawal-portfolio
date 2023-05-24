@@ -3,25 +3,88 @@
 @tailwind utilities;
 
 :root {
+  /* SPACES */
+  --spacer-smallest: 4px;
+  --spacer-smaller: 8px;
+  --spacer-small: 12px;
+  --spacer: 16px;
+  --spacer-large: 20px;
+  --spacer-larger: 24px;
+  --spacer-largest: 28px;
+
+  /* BORDER RADIUS */
+  --border-radius: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+
+  /* COLORS */
+  --clr-orange: #f27121;
+  --clr-orange-rgb: 242, 113, 33;
+  --clr-pink-rgb: 210, 78, 145;
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgba(var(--background-end-rgb), 1)
     )
-    rgb(var(--background-start-rgb));
+    rgba(var(--background-start-rgb), 1);
+}
+section {
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
+}
+:is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.2;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* TABLET */
+@media screen and (min-width: 45em) and (max-width: 96.0005em) {
+}
+
+/* TABLET AND ABOVE */
+@media screen and (min-width: 45em) {
+  :root {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+/* PORTABLE */
+@media screen and (max-width: 96.0005em) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: 96.006em) {
 }
