@@ -5,7 +5,7 @@ header {
   padding-top: var(--spacer-smaller);
   padding-bottom: var(--spacer-smaller);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background: rgba(var(--background-end-rgb), 1);
+  background: rgba(var(--background-start-rgb), 1);
   z-index: 999999999;
 }
 .header-overlay {

@@ -25,17 +25,17 @@
 .item__title {
   font-size: 1.25rem;
   font-weight: 500;
-  color: rgba(var(--background-end-rgb), 1);
+  color: rgba(var(--clr-white-rgb), 1);
 }
 .item__desc {
-  color: rgba(var(--background-end-rgb), 0.6);
+  color: rgba(var(--clr-white-rgb), 0.6);
 }
 .item__link {
   padding: var(--spacer);
   border-radius: 100%;
-  background: rgba(var(--background-start-rgb), 0.2);
+  background: rgba(var(--clr-white-rgb), 0.2);
   backdrop-filter: blur(10px);
-  color: rgba(var(--background-end-rgb), 0.6);
+  color: rgba(var(--clr-white-rgb), 0.6);
 }
 /* .item__link-github {
   transform: translateX(-300%);
@@ -55,8 +55,8 @@
 .project-item img {
   height: calc(var(--_item-h) - 2px) !important;
   width: 100% !important;
-  object-fit: contain;
-  object-position: right;
+  object-fit: cover;
+  object-position: top center;
   transition: transform ease-in-out 0.5s;
 }
 .project-item:hover img {
