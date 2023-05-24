@@ -5,16 +5,19 @@
   padding: var(--spacer-small) calc(2 * var(--spacer-largest));
   border-radius: var(--border-radius-xxl);
   border: 2px solid transparent;
-  background: rgba(var(--clr-pink-rgb), var(--_btn-opacity));
+  background: rgba(var(--clr-default-rgb), var(--_btn-opacity));
   color: rgba(var(--background-end-rgb), 1);
   font-size: 0.9rem;
+  font-weight: 600;
   text-align: center;
+  transition: all ease-in-out 0.2s;
 }
 .btn:hover {
   --_btn-opacity: 0.8;
 
-  border-color: rgba(var(--clr-pink-rgb), var(--_btn-opacity));
+  border-color: rgba(var(--clr-default-rgb), var(--_btn-opacity));
   background: transparent;
+  color: rgba(var(--clr-default-rgb), 1);
 }
 
 /* MOBILE ONLY */
