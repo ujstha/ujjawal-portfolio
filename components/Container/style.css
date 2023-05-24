@@ -6,19 +6,11 @@
   padding-left: var(--_container);
 }
 
-/* TABLET */
-@media screen and (min-width: 45em) and (max-width: 96.0005em) {
-}
-
 /* TABLET AND ABOVE */
 @media screen and (min-width: 45em) {
   .ts-container {
     --_container: calc(4 * var(--spacer-largest));
   }
-}
-
-/* PORTABLE */
-@media screen and (max-width: 96.0005em) {
 }
 
 /* DESKTOP */
