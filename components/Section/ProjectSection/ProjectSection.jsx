@@ -1,21 +1,9 @@
-"use client";
 import Container from "@components/Container";
 import Project from "./Project";
 
 import "./style.css";
-import { useEffect } from "react";
 
 const ProjectSection = () => {
-  useEffect(() => {
-    let projectList = document.getElementById("project-list");
-    // projectList?.children.map((child) => console.log({ child }));
-
-    console.log({
-      projectList: Object.values(projectList?.childNodes).map(
-        (c) => c.children
-      ),
-    });
-  });
   return (
     <Container id="projects" isSection className="project-section">
       <h2 className="section__title">Projects</h2>

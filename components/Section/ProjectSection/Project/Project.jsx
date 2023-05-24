@@ -35,11 +35,12 @@ const Project = (props) => {
       </div>
       <h3 className="item__title">{title}</h3>
       <p className="item__desc">{text}</p>
-      <Image
+      {/* <Image
         src="/assets/images/projects-images/tenslam.png"
         fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         alt="Project Image"
-      />
+      /> */}
     </div>
   );
 };

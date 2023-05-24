@@ -18,8 +18,8 @@
   max-width: var(--_detail-max-w);
   padding: calc(1.5 * var(--spacer-largest));
   background: linear-gradient(
-    to right,
-    rgba(var(--foreground-rgb), 0.05),
+    160deg,
+    rgba(var(--foreground-rgb), 0.15),
     rgba(var(--background-end-rgb), 0.6)
   );
   backdrop-filter: blur(5px);
@@ -56,7 +56,7 @@
     rgba(var(--background-end-rgb), 1),
     rgba(var(--clr-orange-rgb), 1)
   );
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
 }
 .hero__imgbox img {
   transform: translate(-50%, -50%);

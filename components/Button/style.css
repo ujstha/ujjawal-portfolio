@@ -6,7 +6,7 @@
   border-radius: var(--border-radius-xxl);
   border: 2px solid transparent;
   background: rgba(var(--clr-default-rgb), var(--_btn-opacity));
-  color: rgba(var(--background-end-rgb), 1);
+  color: #fefefee0;
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;

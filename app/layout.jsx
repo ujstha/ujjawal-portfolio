@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
+import { Montserrat_Alternates } from "next/font/google";
 import Nav from "@components/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserratAlternates = Montserrat_Alternates({
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+});
 
 import "@styles/globals.css";
 
@@ -12,8 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" data-theme="dark">
+      <body className={montserratAlternates.className}>
         <Nav />
         <main>{children}</main>
       </body>

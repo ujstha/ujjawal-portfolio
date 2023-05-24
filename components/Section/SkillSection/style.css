@@ -1,0 +1,34 @@
+.skill-section {
+  --_icon-h: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: calc(3 * var(--spacer-largest));
+  padding-bottom: calc(3 * var(--spacer-largest));
+}
+.skill-section .icon {
+  height: var(--_icon-h);
+  max-width: 50%;
+  color: var(--clr-gray);
+}
+
+/* TABLET AND ABOVE */
+@media screen and (min-width: 45em) {
+  .skill-section {
+    --_icon-h: 120px;
+  }
+}
+
+/* PORTABLE LAPTOP */
+@media screen and (min-width: 64.064em) {
+  .skill-section {
+    --_icon-h: 140px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 96.006em) {
+}

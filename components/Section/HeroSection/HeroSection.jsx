@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="hero__details">
         <div>
           <h1 className="title">
-            Hello, I'm Ujjawal, a web Developer with 4 years of experience.
+            Hello, I'm Ujjawal, a Web Developer with 4 years of experience.
           </h1>
           <p className="desc">
             I care a lot about using design for positive impact. and enjoy

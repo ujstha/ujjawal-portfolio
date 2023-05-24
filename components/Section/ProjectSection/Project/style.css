@@ -1,5 +1,5 @@
 .project-item {
-  --_item-h: 350px;
+  --_item-h: 300px;
   --_item-max-w: 100%;
 
   position: relative;
@@ -10,11 +10,16 @@
   border-radius: var(--border-radius-xl);
   overflow: hidden;
   cursor: pointer;
-  background: rgba(var(--background-start-rgb), 0.5);
+  background: linear-gradient(
+    160deg,
+    rgba(var(--background-start-rgb), 0.15),
+    rgba(var(--foreground-rgb), 0.15)
+  );
+  backdrop-filter: blur(5px);
 }
 .item__overlay {
-  background: rgba(var(--foreground-rgb), 0.35);
-  backdrop-filter: blur(3px);
+  background: rgba(var(--foreground-rgb), 0.05);
+  /* backdrop-filter: blur(3px); */
   z-index: 1;
 }
 .item__title,
@@ -23,19 +28,20 @@
   z-index: 3;
 }
 .item__title {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: rgba(var(--background-end-rgb), 1);
+  margin-bottom: var(--spacer);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(var(--clr-white-rgb), 1);
 }
 .item__desc {
-  color: rgba(var(--background-end-rgb), 0.6);
+  color: rgba(var(--clr-white-rgb), 0.6);
 }
 .item__link {
-  padding: var(--spacer);
+  padding: var(--spacer-small);
   border-radius: 100%;
-  background: rgba(var(--background-start-rgb), 0.2);
+  background: rgba(var(--clr-white-rgb), 0.2);
   backdrop-filter: blur(10px);
-  color: rgba(var(--background-end-rgb), 0.6);
+  color: rgba(var(--clr-white-rgb), 0.6);
 }
 /* .item__link-github {
   transform: translateX(-300%);
@@ -47,7 +53,7 @@
   margin-left: var(--spacer-larger);
 }
 .item__link .icon {
-  height: 40px;
+  height: 25px;
 }
 .item__link:hover {
   color: rgba(var(--clr-default-rgb), 0.8);
@@ -56,7 +62,7 @@
   height: calc(var(--_item-h) - 2px) !important;
   width: 100% !important;
   object-fit: contain;
-  object-position: right;
+  object-position: top center;
   transition: transform ease-in-out 0.5s;
 }
 .project-item:hover img {
@@ -69,7 +75,7 @@
     --_item-h: 325px;
     --_item-max-w: calc(50% - var(--spacer-smaller));
   }
-  .project-item:nth-child(3n + 2) {
+  .project-item:nth-child(2n + 2) {
     margin-top: calc(2 * var(--spacer));
   }
 }
@@ -77,7 +83,7 @@
 /* PORTABLE LAPTOP */
 @media screen and (min-width: 64.064em) {
   .project-item {
-    --_item-h: 400px;
+    /* --_item-h: 400px; */
     --_item-max-w: calc(33.33% - var(--spacer-small));
   }
   .item__link {
