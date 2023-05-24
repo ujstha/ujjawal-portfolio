@@ -34,6 +34,8 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  --clr-default-rgb: var(--clr-orange-rgb);
+
   box-sizing: border-box;
   font-size: 14px;
 }
