@@ -1,11 +1,9 @@
-import HeroSection from "@components/Section/HeroSection";
-import ProjectSection from "@components/Section/ProjectSection";
+import Section from "@components/Section";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <ProjectSection />
+      <Section />
     </>
   );
 }

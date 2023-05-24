@@ -18,7 +18,7 @@ const ProjectSection = () => {
   });
   return (
     <Container id="projects" isSection className="project-section">
-      <h2 className="title section__title">Projects</h2>
+      <h2 className="section__title">Projects</h2>
       <div id="project-list" className="project-list">
         <Project
           title="Tenslam"
