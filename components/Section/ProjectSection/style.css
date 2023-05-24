@@ -1,0 +1,9 @@
+.section__title {
+  margin-bottom: var(--spacer-larger);
+  font-size: 1.5rem;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacer);
+}

@@ -80,6 +80,11 @@ section {
   inset: 0;
   background: rgba(var(--background-start-rgb), 1);
 }
+.overlay--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* TABLET */
 @media screen and (min-width: 45em) and (max-width: 96.0005em) {

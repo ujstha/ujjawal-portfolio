@@ -6,6 +6,7 @@ import "./style.css";
 const Container = (props) => {
   const {
     children,
+    id = "",
     className = "",
     isHeader = false,
     isSection = false,
@@ -21,19 +22,19 @@ const Container = (props) => {
 
   if (isHeader)
     return (
-      <header className={classes} ref={refer} style={style}>
+      <header id={id} className={classes} ref={refer} style={style}>
         {children}
       </header>
     );
   if (isSection)
     return (
-      <section className={classes} ref={refer} style={style}>
+      <section id={id} className={classes} ref={refer} style={style}>
         {children}
       </section>
     );
 
   return (
-    <div className={classes} ref={refer} style={style}>
+    <div id={id} className={classes} ref={refer} style={style}>
       {children}
     </div>
   );
@@ -41,6 +42,7 @@ const Container = (props) => {
 
 Container.propTypes = {
   className: PropTypes.string,
+  id: PropTypes.string,
   isHeader: PropTypes.bool,
   isSection: PropTypes.bool,
   refer: PropTypes.object,
