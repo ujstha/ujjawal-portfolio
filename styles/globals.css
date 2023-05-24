@@ -24,6 +24,7 @@
   --clr-light-orange: #cc8742;
   --clr-dark-orange: #cc6239;
   --clr-dark-blue: #00313c;
+  --clr-gray: #868d93;
   --clr-white-rgb: 254, 254, 254;
   --clr-black-rgb: 6, 6, 6;
   --clr-light-orange-rgb: 204, 135, 66;
@@ -35,7 +36,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --clr-main: rgb(254, 254, 254);
+  --clr-main: var(--gray);
 
   --clr-default-text-rgb: var(--clr-black-rgb);
   --clr-default-rgb: var(--clr-orange-rgb);
@@ -65,16 +66,11 @@ body {
   margin: 0;
   min-height: 100vh;
   color: rgb(var(--clr-default-text-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(var(--background-end-rgb), 1)
-    )
-    rgba(var(--background-start-rgb), 1);
+  background: rgba(var(--background-start-rgb), 1);
 }
 section {
-  padding-top: var(--spacer);
-  padding-bottom: var(--spacer);
+  padding-top: calc(2 * var(--spacer-largest));
+  padding-bottom: calc(2 * var(--spacer-largest));
 }
 :is(h1, h2, h3, h4, h5, h6) {
   line-height: 1.2;

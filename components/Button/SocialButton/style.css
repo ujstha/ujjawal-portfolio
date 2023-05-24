@@ -1,12 +1,12 @@
 .btn-social {
-  --_btn-social-opacity: 0.2;
+  --_btn-social-opacity: 0.15;
 
   display: inline-block;
   padding: var(--spacer-small);
   border-radius: 100%;
   margin-bottom: -5px;
   background: rgba(var(--clr-white-rgb), var(--_btn-social-opacity));
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(10px);
   transition: all ease-in-out 0.2s;
 }
 .btn-social:not(:first-child) {
