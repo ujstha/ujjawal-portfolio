@@ -4,20 +4,27 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Icon from "@components/Icon";
-
-import "./style.css";
 import { useEffect } from "react";
 import { isInViewPort } from "@utils/isInViewPort";
 
+import "./style.css";
+
 const Project = (props) => {
-  const { title, text, githubLink = "", siteLink = "", image = "", style } = props;
+  const {
+    title,
+    text,
+    githubLink = "",
+    siteLink = "",
+    image = "",
+    style,
+  } = props;
 
   useEffect(() => {
     isInViewPort(".project-item");
   }, []);
 
   return (
-    <div className="project-item" style={...style}>
+    <div className="project-item" style={style}>
       <div
         className={classNames({
           overlay: true,
@@ -70,7 +77,7 @@ Project.propTypes = {
   githubLink: PropTypes.string,
   siteLink: PropTypes.string,
   image: PropTypes.string,
-  style:PropTypes.object
+  style: PropTypes.object,
 };
 
 export default Project;
