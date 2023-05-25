@@ -12,48 +12,20 @@ const ProjectSection = () => {
           title="Tenslam"
           text="A web app to practice and play virtual tennis"
           siteLink="https://tenslam.ai/"
+          image="tenslam.png"
         />
         <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
+          title="Eventti.net"
+          text="Web app for adding and listing events and purchase tickets"
+          siteLink="https://eventti.net/"
+          image="eventti.png"
         />
         <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
-        />
-        <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
-        />
-        <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
-        />
-        <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
-        />
-        <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
-        />
-        <Project
-          title="Tenslam"
-          text="A web app to practice and play virtual tennis"
-          githubLink="https://github.com/ujstha"
-          siteLink="https://tenslam.ai/"
+          title="TMDbCine"
+          text="Get information about movies, TV shows, and celebrities"
+          githubLink="https://github.com/ujstha/tmdb-cine"
+          siteLink="https://tmdb-cine.netlify.app/"
+          image="tmdb-cine.png"
         />
       </div>
     </Container>

@@ -3,6 +3,7 @@
   --_detail-max-w: 100%;
   --_imgbox-max-w: 100%;
   --_hero-min-h: 300px;
+  --_title-max-w: 98%;
 
   display: flex;
   justify-content: space-between;
@@ -25,7 +26,10 @@
   backdrop-filter: blur(5px);
 }
 .hero__details .title {
-  max-width: 90%;
+  max-width: var(--_title-max-w);
+}
+.title .work {
+  color: var(--clr-gray);
 }
 .hero__details :is(.desc) {
   margin-top: var(--spacer-largest);
@@ -93,6 +97,7 @@
 @media screen and (min-width: 45em) {
   .hero-section {
     --_hero-min-h: 550px;
+    --_title-max-w: 90%;
   }
   .hero__details {
     display: flex;

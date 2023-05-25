@@ -22,6 +22,9 @@
   /* backdrop-filter: blur(3px); */
   z-index: 1;
 }
+.item__overlay--dark {
+  background: rgba(var(--foreground-rgb), 0.65);
+}
 .item__title,
 .item__desc {
   position: relative;
@@ -34,6 +37,7 @@
   color: rgba(var(--clr-white-rgb), 1);
 }
 .item__desc {
+  margin-bottom: var(--spacer);
   color: rgba(var(--clr-white-rgb), 0.6);
 }
 .item__link {
@@ -61,8 +65,9 @@
 .project-item img {
   height: calc(var(--_item-h) - 2px) !important;
   width: 100% !important;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top center;
+  border-radius: var(--border-radius-lg);
   transition: transform ease-in-out 0.5s;
 }
 .project-item:hover img {
