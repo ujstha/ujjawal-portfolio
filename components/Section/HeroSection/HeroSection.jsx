@@ -12,10 +12,7 @@ const HeroSection = () => {
       <div className="hero__details">
         <div>
           <h1 className="title">
-            Ujjawal Shrestha,{" "}
-            <span className="work">
-              a Web-Developer with 4 years of experience.
-            </span>
+            Ujjawal Shrestha, a Web-Developer with 4 years of experience.
           </h1>
           <p className="desc slide-down" style={{ "--i": "0.2s" }}>
             I care a lot about using design for positive impact. and enjoy
@@ -45,7 +42,7 @@ const HeroSection = () => {
       </div>
       <div className="hero__imgbox">
         <Image
-          src="/assets/images/profile-pic-5.png"
+          src="/assets/images/profile-pic-5.webp"
           alt="Picture of Ujjawal Shrestha"
           style={{ objectFit: "cover", objectPosition: "99% center" }}
           fill
