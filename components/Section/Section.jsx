@@ -11,7 +11,7 @@ const Section = () => {
       <HeroSection />
       <ProjectSection />
       <SkillSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
     </>
   );
 };
