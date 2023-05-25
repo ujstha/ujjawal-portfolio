@@ -1,15 +1,23 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import Icon from "@components/Icon";
 
 import "./style.css";
 
 const Project = (props) => {
-  const { title, text, githubLink = "", siteLink = "" } = props;
+  const { title, text, githubLink = "", siteLink = "", image = "" } = props;
 
   return (
     <div className="project-item">
-      <div className="overlay overlay--center item__overlay">
+      <div
+        className={classNames({
+          overlay: true,
+          "overlay--center": true,
+          item__overlay: true,
+          "item__overlay--dark": image !== "",
+        })}
+      >
         {githubLink !== "" && (
           <a
             href={githubLink}
@@ -35,12 +43,14 @@ const Project = (props) => {
       </div>
       <h3 className="item__title">{title}</h3>
       <p className="item__desc">{text}</p>
-      {/* <Image
-        src="/assets/images/projects-images/tenslam.png"
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        alt="Project Image"
-      /> */}
+      {image !== "" && (
+        <Image
+          src={`/assets/images/projects-images/${image}`}
+          height={500}
+          width={600}
+          alt={`${title} project image`}
+        />
+      )}
     </div>
   );
 };
@@ -50,6 +60,7 @@ Project.propTypes = {
   text: PropTypes.string,
   githubLink: PropTypes.string,
   siteLink: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default Project;
