@@ -20,7 +20,7 @@ footer {
   line-height: 1.5;
 }
 .dd span:first-child {
-  color: var(--clr-gray);
+  color: rgba(var(--clr-white-rgb), 0.8);
 }
 .dd span:last-child {
   font-size: 1.25rem;

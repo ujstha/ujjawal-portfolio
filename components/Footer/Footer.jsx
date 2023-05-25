@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <Container isFooter>
       {/* <div className="footer-box"> */}
-      <div className="dd">
+      <p className="dd">
         <span>Designed & Developed</span> <span>UjjawalShrestha</span>
-      </div>
-      <div className="copy">
+      </p>
+      <p className="copy">
         {new Date().getFullYear()} &copy; All rights reserved
-      </div>
+      </p>
       <div>
         <SocialButton href={INSTAGRAM} type="instagram" delay="0.5s" />
         <SocialButton href={LINKEDIN} type="linkedin" delay="1s" />
