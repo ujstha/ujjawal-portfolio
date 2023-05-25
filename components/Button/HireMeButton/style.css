@@ -1,0 +1,32 @@
+.btn-hire {
+  position: fixed;
+  left: var(--spacer-smallest);
+  bottom: var(--spacer-smallest);
+  z-index: 9999;
+}
+.btn-hire > div {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+.btn-hire,
+.btn-hire > div,
+.btn.btn-hire-me.btn--filled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.btn-hire .icon {
+  color: var(--clr-white);
+}
+.btn.btn-hire-me.btn--filled {
+  height: 80px;
+  width: 80px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

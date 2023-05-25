@@ -3,3 +3,8 @@
   flex-wrap: wrap;
   gap: var(--spacer);
 }
+.project-item.animate {
+  transform: translateY(0);
+  animation: slideUp 0.5s linear forwards;
+  transition: all ease-in-out 0.2s;
+}

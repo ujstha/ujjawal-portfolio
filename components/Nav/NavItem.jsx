@@ -2,9 +2,13 @@
 
 import { scrollTo } from "@utils/scrollTo";
 
-const NavItem = ({ text }) => {
+const NavItem = ({ text, animationDelay }) => {
   return (
-    <span className="nav-link" onClick={() => scrollTo(text)}>
+    <span
+      className="nav-link slide-down"
+      onClick={() => scrollTo(text)}
+      style={{ "--i": animationDelay }}
+    >
       {text}
     </span>
   );

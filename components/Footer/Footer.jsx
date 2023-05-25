@@ -1,9 +1,8 @@
 import Container from "@components/Container";
+import SocialButton from "@components/Button/SocialButton";
+import { INSTAGRAM, LINKEDIN, FACEBOOK, GITHUB } from "@constants/url";
 
 import "./style.css";
-import Button from "@components/Button/Button";
-import SocialButton from "@components/Button/SocialButton/SocialButton";
-import { INSTAGRAM, LINKEDIN, FACEBOOK } from "@constants/url";
 
 const Footer = () => {
   return (
@@ -15,11 +14,11 @@ const Footer = () => {
       <div className="copy">
         {new Date().getFullYear()} &copy; All rights reserved
       </div>
-      <Button href="/" text="Contact me" className="btn-contact" />
-      <div className="social-btns">
-        <SocialButton href={INSTAGRAM} type="instagram" />
-        <SocialButton href={LINKEDIN} type="linkedin" />
-        <SocialButton href={FACEBOOK} type="facebook" />
+      <div>
+        <SocialButton href={INSTAGRAM} type="instagram" delay="0.5s" />
+        <SocialButton href={LINKEDIN} type="linkedin" delay="1s" />
+        <SocialButton href={FACEBOOK} type="facebook" delay="1.5s" />
+        <SocialButton href={GITHUB} type="github" delay="2s" />
       </div>
       {/* </div> */}
     </Container>

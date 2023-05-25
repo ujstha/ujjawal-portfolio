@@ -4,8 +4,17 @@ import classNames from "classnames";
 import "./style.css";
 
 const Button = (props) => {
-  const { text, className, type, onClick, isFull, isOutlined, isFilled, href } =
-    props;
+  const {
+    text,
+    className,
+    type,
+    onClick,
+    isFull,
+    isOutlined,
+    isFilled,
+    href,
+    ...rest
+  } = props;
 
   const btnClasses = {
     btn: true,
@@ -16,7 +25,12 @@ const Button = (props) => {
 
   if (href) {
     return (
-      <a href={href} title={text} className={classNames(btnClasses, className)}>
+      <a
+        href={href}
+        title={text}
+        className={classNames(btnClasses, className)}
+        {...rest}
+      >
         {text}
       </a>
     );
