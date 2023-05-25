@@ -10,6 +10,7 @@ const Container = (props) => {
     className = "",
     isHeader = false,
     isSection = false,
+    isFooter = false,
     refer,
     style,
   } = props;
@@ -32,6 +33,12 @@ const Container = (props) => {
         {children}
       </section>
     );
+  if (isFooter)
+    return (
+      <footer id={id} className={classes} ref={refer} style={style}>
+        {children}
+      </footer>
+    );
 
   return (
     <div id={id} className={classes} ref={refer} style={style}>
@@ -45,6 +52,7 @@ Container.propTypes = {
   id: PropTypes.string,
   isHeader: PropTypes.bool,
   isSection: PropTypes.bool,
+  isFooter: PropTypes.bool,
   refer: PropTypes.object,
   style: PropTypes.object,
 };

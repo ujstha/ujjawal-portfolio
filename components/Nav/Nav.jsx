@@ -18,8 +18,8 @@ const Nav = () => {
         <div>
           <NavItem text="home" />
           <NavItem text="projects" />
-          <NavItem text="about" />
-          <NavItem text="contact" />
+          <NavItem text="skills" />
+          {/* <NavItem text="contact" /> */}
         </div>
       </nav>
     </Container>

@@ -1,0 +1,34 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: var(--spacer-larger);
+  padding-bottom: var(--spacer-larger);
+}
+.footer-box {
+  display: flex;
+  padding: var(--spacer-largest);
+  border-radius: var(--border-radius-lg);
+  background: rgba(var(--clr-gray-rgb), 0.1);
+  backdrop-filter: blur(10px);
+}
+.dd span {
+  display: block;
+  position: relative;
+  line-height: 1.5;
+}
+.dd span:first-child {
+  color: var(--clr-gray);
+}
+.dd span:last-child {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.dd span:last-child::before {
+  content: "<";
+}
+.dd span:last-child::after {
+  content: ">";
+}
