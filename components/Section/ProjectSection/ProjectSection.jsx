@@ -13,12 +13,14 @@ const ProjectSection = () => {
           text="A web app to practice and play virtual tennis"
           siteLink="https://tenslam.ai/"
           image="tenslam.png"
+          // style={{ "--i": "0.4s" }}
         />
         <Project
           title="Eventti.net"
           text="Web app for adding and listing events and purchase tickets"
           siteLink="https://eventti.net/"
           image="eventti.png"
+          // style={{ "--i": "0.6s" }}
         />
         <Project
           title="TMDbCine"
@@ -26,6 +28,7 @@ const ProjectSection = () => {
           githubLink="https://github.com/ujstha/tmdb-cine"
           siteLink="https://tmdb-cine.netlify.app/"
           image="tmdb-cine.png"
+          // style={{ "--i": "0.8s" }}
         />
       </div>
     </Container>

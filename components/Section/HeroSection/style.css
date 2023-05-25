@@ -60,7 +60,7 @@
     rgba(var(--background-end-rgb), 1),
     rgba(var(--clr-orange-rgb), 1)
   );
-  animation: spin 10s linear infinite;
+  animation: spinRT 10s linear infinite;
 }
 .hero__imgbox img {
   transform: translate(-50%, -50%);
@@ -76,20 +76,22 @@
   gap: var(--spacer);
   margin-top: var(--spacer-largest);
 }
-
-@keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+/* .social-btns > * {
+  opacity: 0;
+  animation: slideRight 0.5s linear var(--i) forwards;
+  transition: opacity 2s linear;
+} */
+.social-btns {
+  margin-top: var(--spacer-largest);
 }
 
 /* MOBILE ONLY */
 @media screen and (max-width: 44.99em) {
   .hero__btns {
     flex-direction: column;
+  }
+  .social-btns {
+    text-align: center;
   }
 }
 

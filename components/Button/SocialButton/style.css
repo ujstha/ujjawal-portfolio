@@ -20,7 +20,8 @@
     .btn-social-facebook,
     .btn-social-instagram,
     .btn-social-linkedin,
-    .btn-social-twitter
+    .btn-social-twitter,
+    .btn-social-github
   ):hover {
   color: rgba(var(--clr-white-rgb), 1);
 }
@@ -43,4 +44,7 @@
 }
 .btn-social-linkedin:hover {
   background: #0077b5;
+}
+.btn-social-github:hover {
+  background: #000000;
 }

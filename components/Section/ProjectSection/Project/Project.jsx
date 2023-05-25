@@ -1,15 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Icon from "@components/Icon";
 
 import "./style.css";
+import { useEffect } from "react";
+import { isInViewPort } from "@utils/isInViewPort";
 
 const Project = (props) => {
-  const { title, text, githubLink = "", siteLink = "", image = "" } = props;
+  const { title, text, githubLink = "", siteLink = "", image = "", style } = props;
+
+  useEffect(() => {
+    isInViewPort(".project-item");
+  }, []);
 
   return (
-    <div className="project-item">
+    <div className="project-item" style={...style}>
       <div
         className={classNames({
           overlay: true,
@@ -49,6 +57,7 @@ const Project = (props) => {
           height={500}
           width={600}
           alt={`${title} project image`}
+          priority
         />
       )}
     </div>
@@ -61,6 +70,7 @@ Project.propTypes = {
   githubLink: PropTypes.string,
   siteLink: PropTypes.string,
   image: PropTypes.string,
+  style:PropTypes.object
 };
 
 export default Project;

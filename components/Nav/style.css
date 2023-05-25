@@ -21,14 +21,18 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+.nav-brand {
+  opacity: 0;
+}
 .nav-link {
+  display: inline-block;
   padding: var(--spacer-smallest) 0;
   border-bottom: 2px solid transparent;
   text-transform: uppercase !important;
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.5s;
 }
 .nav-link:not(:last-child) {
   margin-right: var(--spacer-small);

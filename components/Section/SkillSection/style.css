@@ -1,18 +1,30 @@
 .skill-section {
   --_icon-h: 100px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
   padding-top: calc(3 * var(--spacer-largest));
   padding-bottom: calc(3 * var(--spacer-largest));
 }
-.skill-section .icon {
+.skills-list {
+  height: 100vh;
+  position: relative;
+  background: repeating-radial-gradient(
+    rgba(var(--clr-gray-rgb), 0.2) 2px,
+    rgba(var(--background-start-rgb), 1) 5px,
+    rgba(var(--background-start-rgb), 1) 100px
+  );
+}
+.skills-list .icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
   height: var(--_icon-h);
-  max-width: 50%;
+  max-width: 20%;
+  opacity: 0;
   color: var(--clr-gray);
+}
+.skills-list.animate .icon {
+  animation: xyAxis 1s linear forwards;
 }
 
 /* TABLET AND ABOVE */
@@ -25,7 +37,7 @@
 /* PORTABLE LAPTOP */
 @media screen and (min-width: 64.064em) {
   .skill-section {
-    --_icon-h: 140px;
+    --_icon-h: 80px;
   }
 }
 
