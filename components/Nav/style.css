@@ -32,7 +32,7 @@ nav {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.4s;
 }
 .nav-link:not(:last-child) {
   margin-right: var(--spacer-small);
@@ -40,4 +40,11 @@ nav {
 .nav-link:hover {
   color: rgba(var(--clr-default-rgb), 1);
   border-bottom-color: rgba(var(--clr-default-rgb), 1);
+}
+.theme-switcher {
+  transition: transform ease-in-out 0.5s, color ease-in-out 0.2s;
+}
+.theme-switcher:hover {
+  color: rgba(var(--clr-default-rgb), 1);
+  transform: scale(1.2);
 }
