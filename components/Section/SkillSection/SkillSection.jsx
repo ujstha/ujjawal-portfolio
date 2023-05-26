@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Container from "@components/Container";
-import Icon from "@components/Icon";
+import Skill from "./Skill";
 import { isInViewPort } from "@utils/isInViewPort";
 
 import "./style.css";
@@ -14,14 +14,20 @@ const SkillSection = () => {
 
   return (
     <Container isSection id="skills" className="skill-section">
-      <div className="skills-list bg-circular-light">
-        <Icon icon="react-js" style={{ "--x": "-20vw", "--y": "2vw" }} />
-        <Icon icon="html" style={{ "--x": "-5vw", "--y": "-10vw" }} />
-        <Icon icon="next-js" style={{ "--x": "20vw", "--y": "6vw" }} />
-        <Icon icon="javascript" style={{ "--x": "0vw", "--y": "12vw" }} />
-        <Icon icon="php" style={{ "--x": "-20vw", "--y": "-15vw" }} />
-        <Icon icon="css" style={{ "--x": "15vw", "--y": "-12vw" }} />
-        <Icon icon="mongodb" style={{ "--x": "32vw", "--y": "-5vw" }} />
+      <h2 className="section__title skill-title">Skills</h2>
+      <div className="skills-list">
+        <Skill text="ReactJS" x="-10vw" y="2vw" />
+        <Skill text="TailwindCSS" x="-28vw" y="-6vw" />
+        <Skill text="NodeJS" x="-28vw" y="8vw" />
+        <Skill text="MySQL" x="-15vw" y="17vw" />
+        <Skill text="HTML" x="-5vw" y="-11vw" />
+        <Skill text="NextJS" x="20vw" y="9vw" />
+        <Skill text="JavaScript" x="0vw" y="11vw" />
+        <Skill text="PHP" x="-20vw" y="-15vw" />
+        <Skill text="CSS" x="15vw" y="-12vw" />
+        <Skill text="MongoDB" x="30vw" y="-5vw" />
+        <Skill text="Laravel" x="12vw" y="1vw" />
+        <Skill text="Express" x="10vw" y="20vw" />
       </div>
     </Container>
   );

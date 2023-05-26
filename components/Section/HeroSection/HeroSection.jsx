@@ -27,7 +27,7 @@ const HeroSection = () => {
             isFilled
           />
           <Button
-            href="/"
+            href="mailto:ujjawalshrestha7@gmail.com"
             text="Contact me"
             className="btn-contact visible"
             isOutlined

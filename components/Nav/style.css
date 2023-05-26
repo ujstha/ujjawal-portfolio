@@ -1,7 +1,7 @@
 header {
   position: sticky;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   padding-top: var(--spacer-smaller);
   padding-bottom: var(--spacer-smaller);
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);

@@ -1,10 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Container from "@components/Container";
 import NavItem from "./NavItem";
 
 import "./style.css";
+import useThemeSwitcher from "@utils/hooks/useThemeSwitcher";
 
 const Nav = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
     <Container isHeader>
       <div className="header-overlay"></div>

@@ -4,13 +4,13 @@
 
 :root {
   /* SPACES */
-  --spacer-smallest: 4px;
-  --spacer-smaller: 8px;
-  --spacer-small: 12px;
-  --spacer: 16px;
-  --spacer-large: 20px;
-  --spacer-larger: 24px;
-  --spacer-largest: 28px;
+  --spacer-smallest: 0.25rem;
+  --spacer-smaller: 0.5rem;
+  --spacer-small: 0.75rem;
+  --spacer: 1rem;
+  --spacer-large: 1.25rem;
+  --spacer-larger: 1.5rem;
+  --spacer-largest: 1.75rem;
 
   /* BORDER RADIUS */
   --border-radius: 8px;
@@ -58,16 +58,28 @@ html[data-theme="dark"] {
   }
 } */
 
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
 html {
   scroll-behavior: smooth !important;
   scroll-padding-top: 40px;
 }
 body {
-  padding: 0;
-  margin: 0;
   min-height: 100vh;
   color: rgb(var(--clr-default-text-rgb));
   background: rgba(var(--background-start-rgb), 1);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img,
+input {
+  max-width: 100%;
 }
 section {
   padding-top: calc(2 * var(--spacer-largest));

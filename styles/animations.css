@@ -79,3 +79,17 @@
   opacity: 0;
   animation: visible 0.5s linear forwards;
 }
+
+/* MOBILE ONLY */
+@media screen and (max-width: 44.999em) {
+  @keyframes xyAxis {
+    from {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate(calc(1.2 * var(--x)), calc(1.2 * var(--y)));
+      opacity: 1;
+    }
+  }
+}
