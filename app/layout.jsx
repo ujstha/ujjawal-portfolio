@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Montserrat_Alternates } from "next/font/google";
 import Nav from "@components/Nav";
 import Footer from "@components/Footer";
@@ -20,6 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserratAlternates.className}>
+        <Script id="theme-switcher" strategy="beforeInteractive">
+          {`if(localStorage.theme === dark || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)'))) {
+            document.documentElement.setAttribute("data-theme", 'dark');
+          } else {
+            document.documentElement.setAttribute("data-theme", "light");
+          }`}
+        </Script>
         <Nav />
         <main>{children}</main>
         <HireMeButton />
