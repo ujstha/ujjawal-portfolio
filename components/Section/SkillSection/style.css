@@ -29,7 +29,7 @@
   opacity: 0;
   font-size: var(--_skill-font-size);
   user-select: none;
-  color: var(--clr-white);
+  color: rgba(var(--clr-white-rgb), 1);
 }
 .skills-list.animate .skill {
   animation: xyAxis 1s linear forwards;
