@@ -7,7 +7,7 @@ const useThemeSwitcher = () => {
   const [mode, setMode] = useState("");
 
   const setDataThemeAttr = (theme) => {
-    return document.documentElement.setAttribute("data-theme", theme);
+    return (document.documentElement.dataset.theme = theme);
   };
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const useThemeSwitcher = () => {
         }
       } else {
         let check = mediaScheme.matches ? "dark" : "light";
+        // let check = "dark";
         setMode(check);
 
         if (check === "dark") {

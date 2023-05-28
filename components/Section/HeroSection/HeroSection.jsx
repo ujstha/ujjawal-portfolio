@@ -42,7 +42,7 @@ const HeroSection = () => {
       </div>
       <div className="hero__imgbox">
         <Image
-          src="/assets/images/profile-pic-5.webp"
+          src="/assets/images/profile-pic-5.png"
           alt="Picture of Ujjawal Shrestha"
           style={{ objectFit: "cover", objectPosition: "99% center" }}
           fill

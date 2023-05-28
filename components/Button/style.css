@@ -12,7 +12,7 @@
 }
 .btn--filled {
   background: rgba(var(--clr-default-rgb), var(--_btn-opacity));
-  color: rgba(var(--clr-white-rgb), var(--_btn-opacity));
+  color: rgba(var(--clr-white-rgb), 1);
 }
 .btn--outlined {
   color: rgba(var(--clr-default-rgb), var(--_btn-opacity));
