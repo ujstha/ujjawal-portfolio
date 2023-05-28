@@ -1,19 +1,17 @@
-"use client";
-
 import Link from "next/link";
 import Container from "@components/Container";
 import NavItem from "./NavItem";
-import Icon from "@components/Icon";
-import useThemeSwitcher from "@utils/hooks/useThemeSwitcher";
+// import Icon from "@components/Icon";
+// import useThemeSwitcher from "@utils/hooks/useThemeSwitcher";
 
 import "./style.css";
 
 const Nav = () => {
-  const [mode, setMode] = useThemeSwitcher();
+  // const [mode, setMode] = useThemeSwitcher();
 
-  const toggleTheme = () => {
-    setMode(mode === "dark" ? "light" : "dark");
-  };
+  // const toggleTheme = () => {
+  //   setMode(mode === "dark" ? "light" : "dark");
+  // };
 
   return (
     <Container isHeader>
@@ -35,13 +33,13 @@ const Nav = () => {
           <NavItem text="skills" animationDelay="0.6s" />
           {/* <NavItem text="contact" /> */}
         </div>
-        <button
+        {/* <button
           className="theme-switcher"
           onClick={toggleTheme}
           title={`Switch to ${mode === "dark" ? "Light" : "Dark"} mode`}
         >
           <Icon icon={mode === "dark" ? "sun" : "moon"} height="1.5rem" />
-        </button>
+        </button> */}
       </nav>
     </Container>
   );

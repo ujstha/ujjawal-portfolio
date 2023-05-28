@@ -35,20 +35,20 @@
   --clr-pink-rgb: 210, 78, 145;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
   --clr-main: var(--gray);
 
-  --clr-default-text-rgb: var(--clr-black-rgb);
   --clr-default-rgb: var(--clr-orange-rgb);
+  --clr-default-text-rgb: var(--clr-white-rgb);
+  --background-start-rgb: 51, 52, 71;
+  --background-end-rgb: 51, 52, 71;
 
   box-sizing: border-box;
   font-size: 14px;
 }
-html[data-theme="dark"] {
-  --clr-default-text-rgb: var(--clr-white-rgb);
-  --background-start-rgb: 51, 52, 71;
-  --background-end-rgb: 51, 52, 71;
+html[data-theme="light"] {
+  --clr-default-text-rgb: var(--clr-black-rgb);
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
